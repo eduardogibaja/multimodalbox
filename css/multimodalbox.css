@@ -1,0 +1,46 @@
+/*!
+ * jQuery UI Dialog 1.8.24
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+.ui-dialog { position: absolute; width: 300px; overflow: hidden; border-radius: 14px}
+.ui-dialog .ui-dialog-titlebar { position: relative; display: none; }
+.ui-dialog .ui-dialog-title { float: left; margin: 0; } 
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { position: relative; border: 0; background: none; overflow: auto; zoom: 1; -webkit-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; padding: 0; }
+
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+.ui-widget-overlay {position: fixed;top: 0; left: 0;overflow: hidden; height: 100%; width: 100%; background: url(../img/overlay.png), repeat 0 0;}
+.ui-corner-dialog-all {-webkit-border-radius: 14px;
+                        -moz-border-radius: 14px;
+                        border-radius: 14px; }
+
+.MiddleLeft, .BottomLeft{clear:left;}                                                                                                                                                                   
+.Title{margin:0; height: 25px; background-color:white;}
+#LoadingOverlay, #LoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.Content{background:#fff; overflow:auto; margin 42px; } 
+.Border{float:left;}
+.Close{position: absolute; right: 16px; top: 16px; background:url(../img/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+.Close:hover{background-position:-25px -25px;}
+.Content{padding: 15px;}
+.TopLeft{width:21px; height:21px; background:url(../img/controls.png) no-repeat -101px 0;}
+.TopRight{width:21px; height:21px; background:url(../img/controls.png) no-repeat -130px 0;}
+.BottomLeft{width:21px; height:21px; background:url(../img/controls.png) no-repeat -101px -29px;}
+.BottomRight{width:21px; height:21px; background:url(../img/controls.png) no-repeat -130px -29px;}
+.MiddleLeft{width:21px; background:url(../img/controls.png) left top repeat-y;}
+.MiddleRight{width:21px; background:url(../img/controls.png) right top repeat-y;}
+.TopCenter{height:21px; background:url(../img/border.png) 0 0 repeat-x;}
+.BottomCenter{height:21px; background:url(../img/border.png) 0 -29px repeat-x;}
+
+
