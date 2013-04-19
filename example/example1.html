@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multimodal examples</title>
+	<link rel="stylesheet" href="../css/multimodalbox.css">
+	<script src="../js/jquery-1.9.1.js"></script>
+	<script src="../js/jquery-ui-1.10.2.custom.js"></script>
+	<script src="../js/multimodalbox.js"></script>
+	
+</head>
+<body>
+
+<h1>Multimodalbox examples</h1>
+
+<div id="box1_launcher">Click on this div to show the modal</div>
+
+<div id="box1" style="display:none;">
+	<p>This is a multimodalbox</p>
+	<p>It is possible to have several multimodalboxes at the same time</p>
+	
+	<p>Click anywhere in this box to generate a new one.</p>
+</div>
+
+
+<script>
+
+		var example1_modal, example2_modal;
+		$("#box1_launcher").click(function(){
+			if (!example1_modal){
+				example1_modal = new multimodalbox({element:"#box1", inline: true, href:"#box1" });
+			}else{
+				example1_modal.open();
+			}
+		});
+		
+		$("#box1").bind("box1_ready", function(){
+			$("#box1").on("click", function(){
+				if (!example2_modal){
+					example2_modal = new multimodalbox({element:"#box2", html:"This is a new multimodalbox!" });
+				}else{
+					example2_modal.open();
+				}
+			});
+		
+		});
+	
+		
+	</script>
+	
+	<style>
+	#box1_launcher{
+		padding: 25px;
+		width: 200px;
+		background-color: #AAA;
+		cursor: pointer;
+	}
+	
+	#box2_launcher{
+		color: blue;
+		cursor: pointer;
+	}
+</style>
+
+
+</body>
+</html>

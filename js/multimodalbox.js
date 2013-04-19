@@ -329,7 +329,12 @@ multimodalbox.prototype.create = function(){
         if (a.open){
             this_box.open();
         }
-        trigger($(a.element),this_box.loadEvent, a.onLoad);
+		console.log("triguering");
+        //trigger($(a.element),this_box.loadEvent, a.onLoad);
+		$(a.element).trigger(this_box.loadEvent);
+		console.log($(a.element));
+		console.log(this_box.loadEvent);
+		console.log(a.onLoad);
         this_box.listeners();
         this_box.mutex = false;
 
